@@ -10,3 +10,5 @@ HK6BM72       W372A3WC
 HK6BM72       W372A3WC
 HK6BM72       W372A3WC
 HK6BM72       W372A3WC
+HK6BM72       W372A3WC
+prueba 1       usando .net 3.5
