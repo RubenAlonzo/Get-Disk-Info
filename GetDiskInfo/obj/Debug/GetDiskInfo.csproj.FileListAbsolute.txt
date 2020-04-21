@@ -1,0 +1,9 @@
+C:\Users\Ruben\source\repos\GetDiskInfo\GetDiskInfo\bin\Debug\GetDiskInfo.exe.config
+C:\Users\Ruben\source\repos\GetDiskInfo\GetDiskInfo\bin\Debug\GetDiskInfo.exe
+C:\Users\Ruben\source\repos\GetDiskInfo\GetDiskInfo\bin\Debug\GetDiskInfo.pdb
+C:\Users\Ruben\source\repos\GetDiskInfo\GetDiskInfo\obj\Debug\GetDiskInfo.csprojAssemblyReference.cache
+C:\Users\Ruben\source\repos\GetDiskInfo\GetDiskInfo\obj\Debug\GetDiskInfo.Form1.resources
+C:\Users\Ruben\source\repos\GetDiskInfo\GetDiskInfo\obj\Debug\GetDiskInfo.Properties.Resources.resources
+C:\Users\Ruben\source\repos\GetDiskInfo\GetDiskInfo\obj\Debug\GetDiskInfo.csproj.GenerateResource.cache
+C:\Users\Ruben\source\repos\GetDiskInfo\GetDiskInfo\obj\Debug\GetDiskInfo.exe
+C:\Users\Ruben\source\repos\GetDiskInfo\GetDiskInfo\obj\Debug\GetDiskInfo.pdb
