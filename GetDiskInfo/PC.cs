@@ -24,26 +24,42 @@ namespace GetDiskInfo
             foreach (ManagementObject wmi in mos.Get())
             {
                 DiskInfo.Add(wmi["Model"].ToString());
-                DiskInfo.Add( wmi["InterfaceType"].ToString());
-                DiskInfo.Add(wmi["SerialNumber"].ToString().Trim(' '));
+                DiskInfo.Add(wmi["InterfaceType"].ToString());
             }
-
             if (DiskInfo[1].ToString() != "USB")
             {
                 Model = DiskInfo[0].ToString(); //Disk model
                 Type = DiskInfo[1].ToString(); //Disk Type
-                SerialDisk = DiskInfo[2].ToString(); //Disk Serial
+
             }
             else
             {
                 Model = DiskInfo[3].ToString();
                 Type = DiskInfo[4].ToString();
+
+            }
+
+            ManagementObjectSearcher mos2 = new ManagementObjectSearcher("select * from win32_physicalmedia");
+
+            foreach (ManagementObject item in mos2.Get())
+            {
+                if (item["SerialNumber"] != null)
+                {
+                    DiskInfo.Add(item["SerialNumber"].ToString().Trim(' ')); 
+                }
+            }
+
+            if (DiskInfo[1].ToString() != "USB")
+            {
+                SerialDisk = DiskInfo[2].ToString();
+            }
+            else
+            {
                 SerialDisk = DiskInfo[5].ToString();
             }
 
-            ManagementObjectSearcher mos2 = new ManagementObjectSearcher("select * from Win32_BIOS");
-
-            foreach (ManagementObject sn in mos2.Get())
+            ManagementObjectSearcher mos3 = new ManagementObjectSearcher("select * from Win32_bios");
+            foreach (ManagementObject sn in mos3.Get())
             {
                 ServiceTag = sn["SerialNumber"].ToString();
             }
